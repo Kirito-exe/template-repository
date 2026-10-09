@@ -1,0 +1,127 @@
+:root{
+    --background-color:#f1f1f1;
+    --header:white;
+}
+body{
+    min-height: 100vh;
+    background-color: var(--background-color);
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+    align-items: center;
+    padding-left: 5em;
+    background-color: var(--header);
+    height: 10vh;
+    box-shadow: 2px 3px 30px rgba(0,0,0,0.2);
+}
+#header .nav{
+    list-style-type: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 60%;
+}
+#header .nav li button{
+    background-color:var(--header) ;
+    border: none;
+    padding: 1em 2em;
+    height: 100%;
+}
+#header .nav li{
+    border: 2px solid black;
+    border-bottom: none;
+    border-top: none;
+    height: 100%;
+    flex:1;
+    text-align: center;
+}
+#content{
+    justify-self: center;
+    align-self: center;
+    width: 90%;
+    border-radius: 30px;
+    background-color: var(--header);
+    margin:50px 0;
+    min-height: 90%;
+    display: grid;
+    align-items: center;
+    overflow: hidden;
+    border: 3px solid black;
+    box-shadow: 2px 3px 2px black;
+}
+#home{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    border: none;
+    height: 100%;
+}
+#home img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    border-radius: 30px;
+}
+#home .text{
+    padding: 3em;
+}
+#home .text div{
+    font-size: 5rem;
+    font-weight: bold;
+    line-height: 1.2em;
+    margin-bottom: 1em;
+}
+#home .text p{
+    font-size: 1.5rem;
+}
+button:hover{
+    cursor: pointer;
+}
+#menu{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    margin: 2em;
+    gap:1em;
+    align-items: center;
+}
+#menu .card{
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 15px;
+    border: 2px solid black;
+}
+.card .info{
+    background-color: white;
+    height:50%;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 1em;
+    
+}
+
+#about-us{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em;
+    align-items: center;
+    gap:2em;
+    justify-content: space-evenly;
+}
+#about-us img{
+    object-fit:scale-down;
+    max-height: 50vh;
+}
+button{
+    font-weight: bold;
+    width: 100%;
+}
